@@ -16,18 +16,18 @@ RANDOM_SEED = 42
 np.random.seed(RANDOM_SEED)
 
 train_files = {
-    "en_positive": r"C:\Users\30731\Desktop\Englishsample.positive.txt",
-    "en_negative": r"C:\Users\30731\Desktop\Englishsample.negative.txt",
-    "zh_positive": r"C:\Users\30731\Desktop\Chinesesample.positive.txt",
-    "zh_negative": r"C:\Users\30731\Desktop\Chinesesample.negative.txt"
+    "en_positive": r"C:\Desktop\Englishsample.positive.txt",
+    "en_negative": r"C:\Desktop\Englishsample.negative.txt",
+    "zh_positive": r"C:\Desktop\Chinesesample.positive.txt",
+    "zh_negative": r"C:\Desktop\Chinesesample.negative.txt"
 }
 
 test_files_labeled = {
-    "en_test_labeled": r"C:\Users\30731\Desktop\Englishtest.label.txt",
-    "zh_test_labeled": r"C:\Users\30731\Desktop\Chinesestest.label.txt"
+    "en_test_labeled": r"C:\Desktop\Englishtest.label.txt",
+    "zh_test_labeled": r"C:\Desktop\Chinesestest.label.txt"
 }
 
-stop_words_file = r"C:\Users\30731\Desktop\cn_stopwords.txt"
+stop_words_file = r"C:\Desktop\cn_stopwords.txt"
 
 def load_stop_words(path):
     if os.path.exists(path):
@@ -225,3 +225,4 @@ if __name__ == "__main__":
     joblib.dump(scaler, "scaler.pkl")
     joblib.dump(svm_model, "svm_model.pkl")
     print("模型已保存: w2v_en.pkl, w2v_zh.pkl, scaler.pkl, svm_model.pkl")
+
